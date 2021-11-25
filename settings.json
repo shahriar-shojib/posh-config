@@ -1,325 +1,142 @@
 {
-	"$schema": "https://aka.ms/terminal-profiles-schema",
-	"actions": [
-		{
-			"command": {
-				"action": "copy",
-				"singleLine": false
-			},
-			"keys": "ctrl+c"
-		},
-		{
-			"command": "find",
-			"keys": "ctrl+shift+f"
-		},
-		{
-			"command": "paste",
-			"keys": "ctrl+v"
-		},
-		{
-			"command": {
-				"action": "splitPane",
-				"split": "auto",
-				"splitMode": "duplicate"
-			},
-			"keys": "alt+shift+d"
+	"telemetry.telemetryLevel": "off",
+	"git.autofetch": true,
+	"editor.fontFamily": "JetBrainsMono NF, 'Courier New', monospace",
+	"terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.cursorStyle": "block",
+	"terminal.integrated.fontFamily": "SFMono Nerd Font",
+	"terminal.integrated.fontWeight": "400",
+	"terminal.integrated.fontSize": 13,
+	"terminal.integrated.cursorBlinking": true,
+	"explorer.confirmDelete": false,
+	"editor.fontLigatures": true,
+	"explorer.confirmDragAndDrop": false,
+	"editor.suggestSelection": "first",
+	"git.confirmSync": false,
+	"eslint.alwaysShowStatus": true,
+	"[typescript]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll": true,
+			"source.organizeImports": true
 		}
-	],
-	"copyFormatting": "none",
-	"copyOnSelect": false,
-	"defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-	"experimental.rendering.software": false,
-	"profiles": {
-		"defaults": {
-			"acrylicOpacity": 0.90000000000000002,
-			"antialiasingMode": "cleartype",
-			"background": "#222222",
-			"bellStyle": "all",
-			"colorScheme": "Panda",
-			"font": {
-				"face": "FiraCode NF Retina",
-				"size": 10,
-				"weight": "normal"
-			},
-			"foreground": "#19F9D8",
-			"useAcrylic": true
-		},
-		"list": [
-			{
-				"commandline": "powershell.exe",
-				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-				"hidden": true,
-				"name": "Windows PowerShell",
-				"startingDirectory": "%USERPROFILE%/Desktop"
-			},
-			{
-				"commandline": "cmd.exe",
-				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-				"hidden": true,
-				"name": "Command Prompt"
-			},
-			{
-				"bellStyle": [
-					"audible",
-					"taskbar"
-				],
-				"cursorShape": "underscore",
-				"font": {
-					"face": "SFMono Nerd Font",
-					"weight": "medium"
-				},
-				"guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-				"hidden": false,
-				"intenseTextStyle": "bold",
-				"name": "PowerShell",
-				"source": "Windows.Terminal.PowershellCore",
-				"startingDirectory": "%USERPROFILE%/Desktop"
-			},
-			{
-				"guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-				"hidden": false,
-				"name": "Ubuntu-20.04",
-				"source": "Windows.Terminal.Wsl"
-			},
-			{
-				"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-				"hidden": true,
-				"name": "Azure Cloud Shell",
-				"source": "Windows.Terminal.Azure"
-			}
-		]
 	},
-	"schemes": [
-		{
-			"background": "#0C0C0C",
-			"black": "#0C0C0C",
-			"blue": "#0037DA",
-			"brightBlack": "#767676",
-			"brightBlue": "#3B78FF",
-			"brightCyan": "#61D6D6",
-			"brightGreen": "#16C60C",
-			"brightPurple": "#B4009E",
-			"brightRed": "#E74856",
-			"brightWhite": "#F2F2F2",
-			"brightYellow": "#F9F1A5",
-			"cursorColor": "#FFFFFF",
-			"cyan": "#3A96DD",
-			"foreground": "#CCCCCC",
-			"green": "#13A10E",
-			"name": "Campbell",
-			"purple": "#881798",
-			"red": "#C50F1F",
-			"selectionBackground": "#FFFFFF",
-			"white": "#CCCCCC",
-			"yellow": "#C19C00"
-		},
-		{
-			"background": "#012456",
-			"black": "#0C0C0C",
-			"blue": "#0037DA",
-			"brightBlack": "#767676",
-			"brightBlue": "#3B78FF",
-			"brightCyan": "#61D6D6",
-			"brightGreen": "#16C60C",
-			"brightPurple": "#B4009E",
-			"brightRed": "#E74856",
-			"brightWhite": "#F2F2F2",
-			"brightYellow": "#F9F1A5",
-			"cursorColor": "#FFFFFF",
-			"cyan": "#3A96DD",
-			"foreground": "#CCCCCC",
-			"green": "#13A10E",
-			"name": "Campbell Powershell",
-			"purple": "#881798",
-			"red": "#C50F1F",
-			"selectionBackground": "#FFFFFF",
-			"white": "#CCCCCC",
-			"yellow": "#C19C00"
-		},
-		{
-			"background": "#282C34",
-			"black": "#282C34",
-			"blue": "#61AFEF",
-			"brightBlack": "#5A6374",
-			"brightBlue": "#61AFEF",
-			"brightCyan": "#56B6C2",
-			"brightGreen": "#98C379",
-			"brightPurple": "#C678DD",
-			"brightRed": "#E06C75",
-			"brightWhite": "#DCDFE4",
-			"brightYellow": "#E5C07B",
-			"cursorColor": "#FFFFFF",
-			"cyan": "#56B6C2",
-			"foreground": "#DCDFE4",
-			"green": "#98C379",
-			"name": "One Half Dark",
-			"purple": "#C678DD",
-			"red": "#E06C75",
-			"selectionBackground": "#FFFFFF",
-			"white": "#DCDFE4",
-			"yellow": "#E5C07B"
-		},
-		{
-			"background": "#FAFAFA",
-			"black": "#383A42",
-			"blue": "#0184BC",
-			"brightBlack": "#4F525D",
-			"brightBlue": "#61AFEF",
-			"brightCyan": "#56B5C1",
-			"brightGreen": "#98C379",
-			"brightPurple": "#C577DD",
-			"brightRed": "#DF6C75",
-			"brightWhite": "#FFFFFF",
-			"brightYellow": "#E4C07A",
-			"cursorColor": "#4F525D",
-			"cyan": "#0997B3",
-			"foreground": "#383A42",
-			"green": "#50A14F",
-			"name": "One Half Light",
-			"purple": "#A626A4",
-			"red": "#E45649",
-			"selectionBackground": "#FFFFFF",
-			"white": "#FAFAFA",
-			"yellow": "#C18301"
-		},
-		{
-			"background": "#000000",
-			"black": "#FFFFFF",
-			"blue": "#0037DA",
-			"brightBlack": "#FFFFFF",
-			"brightBlue": "#2258FF",
-			"brightCyan": "#61D6D6",
-			"brightGreen": "#16C60C",
-			"brightPurple": "#B0009A",
-			"brightRed": "#E74856",
-			"brightWhite": "#F2F2F2",
-			"brightYellow": "#F9ED8C",
-			"cursorColor": "#0098FF",
-			"cyan": "#3A96DD",
-			"foreground": "#19F9D8",
-			"green": "#13A10E",
-			"name": "Panda",
-			"purple": "#881798",
-			"red": "#C50F1F",
-			"selectionBackground": "#7476FF",
-			"white": "#CCCCCC",
-			"yellow": "#C19C00"
-		},
-		{
-			"background": "#002B36",
-			"black": "#002B36",
-			"blue": "#268BD2",
-			"brightBlack": "#073642",
-			"brightBlue": "#839496",
-			"brightCyan": "#93A1A1",
-			"brightGreen": "#586E75",
-			"brightPurple": "#6C71C4",
-			"brightRed": "#CB4B16",
-			"brightWhite": "#FDF6E3",
-			"brightYellow": "#657B83",
-			"cursorColor": "#FFFFFF",
-			"cyan": "#2AA198",
-			"foreground": "#839496",
-			"green": "#859900",
-			"name": "Solarized Dark",
-			"purple": "#D33682",
-			"red": "#DC322F",
-			"selectionBackground": "#FFFFFF",
-			"white": "#EEE8D5",
-			"yellow": "#B58900"
-		},
-		{
-			"background": "#FDF6E3",
-			"black": "#002B36",
-			"blue": "#268BD2",
-			"brightBlack": "#073642",
-			"brightBlue": "#839496",
-			"brightCyan": "#93A1A1",
-			"brightGreen": "#586E75",
-			"brightPurple": "#6C71C4",
-			"brightRed": "#CB4B16",
-			"brightWhite": "#FDF6E3",
-			"brightYellow": "#657B83",
-			"cursorColor": "#002B36",
-			"cyan": "#2AA198",
-			"foreground": "#657B83",
-			"green": "#859900",
-			"name": "Solarized Light",
-			"purple": "#D33682",
-			"red": "#DC322F",
-			"selectionBackground": "#FFFFFF",
-			"white": "#EEE8D5",
-			"yellow": "#B58900"
-		},
-		{
-			"background": "#000000",
-			"black": "#000000",
-			"blue": "#3465A4",
-			"brightBlack": "#555753",
-			"brightBlue": "#729FCF",
-			"brightCyan": "#34E2E2",
-			"brightGreen": "#8AE234",
-			"brightPurple": "#AD7FA8",
-			"brightRed": "#EF2929",
-			"brightWhite": "#EEEEEC",
-			"brightYellow": "#FCE94F",
-			"cursorColor": "#FFFFFF",
-			"cyan": "#06989A",
-			"foreground": "#D3D7CF",
-			"green": "#4E9A06",
-			"name": "Tango Dark",
-			"purple": "#75507B",
-			"red": "#CC0000",
-			"selectionBackground": "#FFFFFF",
-			"white": "#D3D7CF",
-			"yellow": "#C4A000"
-		},
-		{
-			"background": "#FFFFFF",
-			"black": "#000000",
-			"blue": "#3465A4",
-			"brightBlack": "#555753",
-			"brightBlue": "#729FCF",
-			"brightCyan": "#34E2E2",
-			"brightGreen": "#8AE234",
-			"brightPurple": "#AD7FA8",
-			"brightRed": "#EF2929",
-			"brightWhite": "#EEEEEC",
-			"brightYellow": "#FCE94F",
-			"cursorColor": "#000000",
-			"cyan": "#06989A",
-			"foreground": "#555753",
-			"green": "#4E9A06",
-			"name": "Tango Light",
-			"purple": "#75507B",
-			"red": "#CC0000",
-			"selectionBackground": "#FFFFFF",
-			"white": "#D3D7CF",
-			"yellow": "#C4A000"
-		},
-		{
-			"background": "#000000",
-			"black": "#000000",
-			"blue": "#000080",
-			"brightBlack": "#808080",
-			"brightBlue": "#0000FF",
-			"brightCyan": "#00FFFF",
-			"brightGreen": "#00FF00",
-			"brightPurple": "#FF00FF",
-			"brightRed": "#FF0000",
-			"brightWhite": "#FFFFFF",
-			"brightYellow": "#FFFF00",
-			"cursorColor": "#FFFFFF",
-			"cyan": "#008080",
-			"foreground": "#C0C0C0",
-			"green": "#008000",
-			"name": "Vintage",
-			"purple": "#800080",
-			"red": "#800000",
-			"selectionBackground": "#FFFFFF",
-			"white": "#C0C0C0",
-			"yellow": "#808000"
-		}
+	"eslint.probe": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"vue",
+		"markdown",
+		"svelte"
 	],
-	"theme": "system"
+	"scm.alwaysShowRepositories": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.printWidth": 120,
+	"prettier.resolveGlobalModules": true,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"prettier.endOfLine": "auto",
+	"prettier.semi": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[react]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		},
+		"editor.tabSize": 2
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			// "source.organizeImports": true
+		},
+		"editor.tabSize": 2
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"[yaml]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.autoIndent": "advanced",
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": false,
+			"strings": true
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.tabSize": 2,
+	"prettier.singleQuote": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.insertSpaces": false,
+	"workbench.iconTheme": "vscode-icons",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"prettier.arrowParens": "avoid",
+	"workbench.colorTheme": "Panda Syntax",
+	"vsicons.dontShowNewVersionMessage": true,
+	"editor.wordWrap": "on",
+	"editor.smoothScrolling": true,
+	"editor.tabCompletion": "on",
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.fontWeight": "normal",
+	"diffEditor.wordWrap": "on",
+	"workbench.list.smoothScrolling": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"problems.showCurrentInStatus": true,
+	"typescript.format.enable": false,
+	"typescript.suggest.completeFunctionCalls": true,
+	"git.enableCommitSigning": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "single",
+	"typescript.preferences.useAliasesForRenames": false,
+	"typescript.implementationsCodeLens.enabled": true,
+	"typescript.suggest.jsdoc.generateReturns": true,
+	"typescript.suggest.completeJSDocs": true,
+	"typescript.preferences.includePackageJsonAutoImports": "on",
+	"typescript.preferences.importModuleSpecifierEnding": "auto",
+	"typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+	"typescript.suggest.includeCompletionsForImportStatements": true,
+	"typescript.autoClosingTags": true,
+	"git.enableSmartCommit": true,
+	"editor.inlineSuggest.enabled": true,
+	"redhat.telemetry.enabled": false,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": true,
+		"plaintext": true,
+		"markdown": false,
+		"http": false
+	},
+	"go.toolsManagement.autoUpdate": true,
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.renderWhitespace": "none",
+	"editor.foldingImportsByDefault": true,
+	"editor.parameterHints.cycle": true,
+	"editor.minimap.maxColumn": 100,
+	"editor.suggest.preview": true,
+	"editor.suggest.shareSuggestSelections": true,
+	"scm.alwaysShowActions": true,
+	// "typescript.inlayHints.enumMemberValues.enabled": true,
+	"typescript.inlayHints.parameterNames.enabled": "literals",
+	"workbench.colorCustomizations": {
+		"editorInlayHint.foreground": "#ffffff57",
+		"editorInlayHint.background": "#00ad821a"
+	},
+	"editor.fontSize": 14,
+	"security.workspace.trust.untrustedFiles": "open",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active",
 }
